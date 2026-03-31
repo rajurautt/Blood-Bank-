@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+
+/* ===========
+==== FORM
+=========== */
+
+.form-banner img {
+  height: 100%;
+  width: 100%;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* =============
+====== laoder 
+=============== */
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: #ff3d00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ======================
+--------- navbar 
+=================== */
+
+.app-navbar {
+  background: linear-gradient(90deg, #020617, #0f172a) !important;
+  color: #fff !important;
+  min-height: 64px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.nav-link,
+.navbar-brand {
+  color: #fff !important;
+}
+
+.app-brand {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.app-nav-link {
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.app-nav-link:hover {
+  opacity: 1;
+}
+
+.app-welcome {
+  white-space: nowrap;
+}
+
+.app-logout-btn {
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 8px 16px;
+}
+
+@media (max-width: 768px) {
+  .app-navbar .container-fluid {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 6px;
+  }
+
+  .app-welcome {
+    font-size: 0.86rem;
+  }
+}

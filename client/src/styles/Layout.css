@@ -1,0 +1,66 @@
+.sidebar {
+  min-height: calc(100vh - 64px);
+  background: linear-gradient(180deg, #0f172a, #1e293b);
+  box-shadow: 2px 0 16px rgba(15, 23, 42, 0.18);
+  color: white;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.menu {
+  padding: 22px 14px;
+}
+
+.menu-item {
+  margin-bottom: 8px;
+  border-radius: 12px;
+  transition: background-color 0.25s ease;
+}
+
+.menu-item a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.menu-item i {
+  width: 18px;
+  font-size: 1rem;
+  margin: 0 12px;
+  color: #e2e8f0;
+}
+
+.active {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 10px;
+}
+
+.active a,
+.active i {
+  color: #0f172a;
+}
+
+.menu-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.app-content-area {
+  background: #f1f5f9;
+  min-height: calc(100vh - 64px);
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    min-height: auto;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .menu-item {
+    margin-bottom: 0;
+  }
+}
